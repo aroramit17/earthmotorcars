@@ -1,0 +1,1639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>Earth MotorCars — Premier Exotic, Luxury & Classic Automobiles · Carrollton, TX</title>
+<meta name="description" content="America's destination for exotic, iconic classic, and bespoke luxury automobiles. Over 300 hand-selected vehicles, concierge buying, and nationwide delivery from our 70,000-square-foot showroom in Carrollton, Texas." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,800;1,6..96,400&family=Manrope:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "name": "Earth MotorCars",
+  "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200",
+  "@id": "https://www.earthmotorcars.com/",
+  "url": "https://www.earthmotorcars.com/",
+  "telephone": "+1-214-483-9040",
+  "priceRange": "$$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3216 Kellway Drive",
+    "addressLocality": "Carrollton",
+    "addressRegion": "TX",
+    "postalCode": "75006",
+    "addressCountry": "US"
+  },
+  "geo": {"@type":"GeoCoordinates","latitude":32.9876,"longitude":-96.8853},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens":"09:00","closes":"19:00"
+  }]
+}
+</script>
+
+<style>
+  /* ============================================================
+     EARTH MOTORCARS — premium dark editorial automotive system
+     ============================================================ */
+
+  :root{
+    --ink:#0a0a0a;
+    --ink-2:#0f0f0f;
+    --graphite:#161616;
+    --graphite-2:#1d1d1d;
+    --steel:#2a2a2a;
+    --hairline:rgba(255,255,255,.08);
+    --hairline-2:rgba(255,255,255,.14);
+    --bone:#f4f0e6;
+    --bone-dim:rgba(244,240,230,.72);
+    --bone-mute:rgba(244,240,230,.46);
+    --bone-faint:rgba(244,240,230,.22);
+    --bronze:#c8a16a;
+    --bronze-2:#b6905a;
+    --bronze-deep:#7a5b34;
+    --silver:#b9c4d2;
+    --redline:#b13a2f;
+
+    --serif:"Bodoni Moda", ui-serif, Georgia, serif;
+    --sans:"Manrope", ui-sans-serif, system-ui, sans-serif;
+    --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+    --shadow-1: 0 1px 0 rgba(255,255,255,.04) inset, 0 30px 60px -30px rgba(0,0,0,.85);
+    --shadow-card: 0 30px 80px -40px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.04) inset;
+
+    --container: 1360px;
+    --gutter: clamp(20px, 4vw, 56px);
+
+    --ease: cubic-bezier(.2,.7,.2,1);
+    --ease-out: cubic-bezier(.16,1,.3,1);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--sans);
+    background:var(--ink);
+    color:var(--bone);
+    font-weight:300;
+    line-height:1.55;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  img,video{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  ::selection{background:var(--bronze);color:var(--ink)}
+
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:1000;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/></svg>");
+    opacity:.06;mix-blend-mode:overlay;
+  }
+
+  .display{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:.96}
+  .display em{font-style:italic;font-weight:400;color:var(--bronze)}
+  .eyebrow{
+    font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--bone-mute);
+  }
+  .eyebrow .dot{display:inline-block;width:6px;height:6px;background:var(--bronze);border-radius:50%;margin-right:.7em;transform:translateY(-2px)}
+  .lede{font-size:clamp(15px,1.05vw,17px); color:var(--bone-dim); max-width:54ch; font-weight:300}
+  .num{font-family:var(--mono);font-feature-settings:"tnum" 1, "lnum" 1; letter-spacing:.04em}
+
+  h1,h2,h3,h4{margin:0;font-weight:400}
+  h1{font-family:var(--serif);font-size:clamp(56px, 9.5vw, 168px);line-height:.93;letter-spacing:-.02em}
+  h2{font-family:var(--serif);font-size:clamp(40px, 5.8vw, 92px);line-height:.98;letter-spacing:-.018em}
+  h3{font-family:var(--serif);font-size:clamp(26px, 2.4vw, 38px);line-height:1.05;letter-spacing:-.012em}
+  h4{font-family:var(--sans);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-mute);font-weight:500}
+
+  .container{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+  section{position:relative}
+  .rule{height:1px;background:var(--hairline);width:100%}
+
+  .btn{
+    --bg:transparent; --fg:var(--bone); --bd:var(--hairline-2);
+    display:inline-flex;align-items:center;gap:14px;
+    padding:18px 26px;
+    font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+    background:var(--bg);color:var(--fg);
+    border:1px solid var(--bd);
+    border-radius:0;
+    position:relative;overflow:hidden;
+    transition:color .5s var(--ease), background .5s var(--ease), border-color .5s var(--ease);
+    cursor:pointer;
+  }
+  .btn .arrow{
+    width:18px;height:1px;background:currentColor;position:relative;
+    transition:width .5s var(--ease), transform .5s var(--ease);
+  }
+  .btn .arrow::after{
+    content:"";position:absolute;right:-1px;top:-3px;width:7px;height:7px;
+    border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg);
+  }
+  .btn::before{
+    content:"";position:absolute;inset:0;background:var(--bronze);
+    transform:scaleX(0);transform-origin:left;transition:transform .55s var(--ease-out);z-index:0;
+  }
+  .btn > *{position:relative;z-index:1}
+  .btn:hover{color:var(--ink);border-color:var(--bronze)}
+  .btn:hover::before{transform:scaleX(1)}
+  .btn:hover .arrow{transform:translateX(4px)}
+
+  .btn--solid{--bg:var(--bronze); --fg:var(--ink); --bd:var(--bronze)}
+  .btn--solid::before{background:var(--bone)}
+  .btn--solid:hover{color:var(--ink);border-color:var(--bone)}
+
+  .btn--ghost{--bd:transparent;padding-left:0;padding-right:0}
+  .btn--ghost::before{display:none}
+  .btn--ghost:hover{color:var(--bronze);background:transparent}
+  .btn--ghost:hover .arrow{transform:translateX(6px)}
+
+  .link-arrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);transition:color .4s}
+  .link-arrow::after{content:"→";font-family:var(--sans);transition:transform .4s var(--ease)}
+  .link-arrow:hover{color:var(--bronze)}
+  .link-arrow:hover::after{transform:translateX(5px)}
+
+  /* HEADER */
+  .topbar{
+    background:#000;color:var(--bone-mute);
+    border-bottom:1px solid var(--hairline);
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  }
+  .topbar .container{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:10px}
+  .topbar a:hover{color:var(--bronze)}
+  .topbar .left{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .topbar .right{display:flex;gap:24px;align-items:center}
+  .topbar .pulse{width:6px;height:6px;border-radius:50%;background:#7ec98a;display:inline-block;margin-right:8px;box-shadow:0 0 8px #7ec98a;animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  @media (max-width:780px){ .topbar .left .hide-sm{display:none} .topbar{font-size:10px} }
+
+  header.nav{
+    position:sticky;top:0;z-index:80;
+    background:rgba(10,10,10,.55);
+    backdrop-filter:blur(18px) saturate(140%);
+    -webkit-backdrop-filter:blur(18px) saturate(140%);
+    border-bottom:1px solid transparent;
+    transition:background .4s, border-color .4s, padding .4s;
+  }
+  header.nav.scrolled{background:rgba(10,10,10,.86);border-bottom-color:var(--hairline)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:22px;transition:padding .4s}
+  header.nav.scrolled .nav-inner{padding-block:14px}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .brand-mark{
+    width:42px;height:42px;border:1px solid var(--bronze);
+    display:grid;place-items:center;color:var(--bronze);
+    font-family:var(--serif);font-size:22px;font-style:italic;font-weight:400;
+    position:relative;
+  }
+  .brand-mark::before,.brand-mark::after{content:"";position:absolute;inset:3px;border:1px solid var(--bronze-deep);opacity:.5}
+  .brand-mark::after{inset:5px;opacity:.25}
+  .brand-name{display:flex;flex-direction:column;line-height:1}
+  .brand-name strong{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:.04em}
+  .brand-name span{font-family:var(--mono);font-size:9.5px;letter-spacing:.36em;color:var(--bone-mute);margin-top:5px;text-transform:uppercase}
+
+  .nav-links{display:flex;gap:34px;align-items:center;list-style:none;margin:0;padding:0}
+  .nav-links a{
+    font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--bone-dim);position:relative;padding:6px 0;transition:color .35s;
+  }
+  .nav-links a::after{
+    content:"";position:absolute;left:0;right:100%;bottom:-2px;height:1px;background:var(--bronze);
+    transition:right .45s var(--ease-out);
+  }
+  .nav-links a:hover{color:var(--bone)}
+  .nav-links a:hover::after{right:0}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .icon-btn{
+    width:42px;height:42px;border:1px solid var(--hairline-2);display:grid;place-items:center;color:var(--bone);
+    transition:border-color .3s, color .3s, background .3s;
+  }
+  .icon-btn:hover{border-color:var(--bronze);color:var(--bronze)}
+  .menu-btn{display:none}
+
+  @media (max-width:1024px){
+    .nav-links{display:none}
+    .menu-btn{display:grid}
+  }
+
+  /* HERO */
+  .hero{
+    position:relative;min-height:100vh;min-height:100svh;
+    overflow:hidden;background:#000;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding-bottom:clamp(40px, 7vw, 90px);
+  }
+  .hero-bg{position:absolute;inset:0;overflow:hidden}
+  .hero-bg img{
+    width:100%;height:100%;object-fit:cover;object-position:center 60%;
+    transform:scale(1.06);
+    animation:slowZoom 18s ease-out forwards;
+    filter:brightness(.62) contrast(1.08) saturate(.85);
+  }
+  @keyframes slowZoom{from{transform:scale(1.18)}to{transform:scale(1.04)}}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(120% 80% at 50% 100%, rgba(10,10,10,.95) 0%, rgba(10,10,10,.4) 50%, transparent 80%),
+      linear-gradient(180deg, rgba(10,10,10,.6) 0%, transparent 25%, transparent 60%, rgba(10,10,10,.95) 100%),
+      linear-gradient(90deg, rgba(10,10,10,.55) 0%, transparent 50%);
+  }
+
+  .hero-meta{
+    position:absolute;top:0;left:0;right:0;
+    padding:clamp(20px,3vw,40px) var(--gutter);
+    display:flex;justify-content:space-between;align-items:flex-start;
+    font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-mute);
+    pointer-events:none;
+  }
+  .hero-meta .crosshair{
+    width:60px;height:60px;border:1px solid var(--hairline-2);position:relative;
+  }
+  .hero-meta .crosshair::before,.hero-meta .crosshair::after{
+    content:"";position:absolute;background:var(--bronze);
+  }
+  .hero-meta .crosshair::before{top:50%;left:0;right:0;height:1px}
+  .hero-meta .crosshair::after{left:50%;top:0;bottom:0;width:1px}
+
+  .hero-content{position:relative;z-index:2;padding:0 var(--gutter)}
+  .hero-eyebrow{display:flex;align-items:center;gap:18px;margin-bottom:clamp(28px,3vw,42px)}
+  .hero-eyebrow .line{flex:0 0 64px;height:1px;background:var(--bronze)}
+  .hero h1{
+    max-width:min(1200px, 90vw);
+    margin-bottom:clamp(28px,3vw,44px);
+  }
+  .hero h1 .row{display:block;overflow:hidden}
+  .hero h1 .row span{display:block;transform:translateY(110%);animation:rise 1.2s var(--ease-out) forwards}
+  .hero h1 .row:nth-child(2) span{animation-delay:.18s}
+  .hero h1 .row:nth-child(3) span{animation-delay:.32s}
+  @keyframes rise{to{transform:translateY(0)}}
+
+  .hero-sub-row{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap;
+    border-top:1px solid var(--hairline);padding-top:clamp(28px,3vw,38px);
+  }
+  .hero-sub{max-width:48ch;color:var(--bone-dim);font-size:clamp(15px,1vw,17px);line-height:1.6}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-stats{
+    display:flex;gap:clamp(28px,3vw,56px);align-items:flex-end;
+    margin-top:clamp(36px,4vw,60px);
+    flex-wrap:wrap;
+  }
+  .stat .v{font-family:var(--serif);font-size:clamp(36px,3.6vw,52px);line-height:1;letter-spacing:-.01em;color:var(--bone)}
+  .stat .v em{font-style:italic;color:var(--bronze);font-weight:400}
+  .stat .l{display:block;margin-top:10px;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-mute)}
+  .stat + .stat{padding-left:clamp(28px,3vw,56px);border-left:1px solid var(--hairline)}
+
+  .scroll-cue{
+    position:absolute;left:var(--gutter);bottom:clamp(20px,2.5vw,32px);
+    display:flex;align-items:center;gap:14px;z-index:3;
+    font-family:var(--mono);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--bone-mute);
+  }
+  .scroll-cue .bar{width:1px;height:46px;background:linear-gradient(var(--bone-mute),transparent);position:relative;overflow:hidden}
+  .scroll-cue .bar::after{content:"";position:absolute;left:0;right:0;top:-46px;height:46px;background:var(--bronze);animation:scrollDown 2.2s infinite}
+  @keyframes scrollDown{0%{top:-46px}100%{top:46px}}
+
+  /* TICKER */
+  .ticker{
+    background:#000;border-block:1px solid var(--hairline);overflow:hidden;
+    padding:18px 0;
+  }
+  .ticker-track{
+    display:flex;gap:64px;
+    animation:scroll-x 48s linear infinite;
+    width:max-content;
+    font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.01em;color:var(--bone);
+  }
+  .ticker-track span{display:inline-flex;align-items:center;gap:64px;white-space:nowrap}
+  .ticker-track .dot{width:6px;height:6px;border-radius:50%;background:var(--bronze);display:inline-block}
+  @keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* SECTION HEADERS */
+  .sec-head{
+    display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,5vw,80px);
+    padding-block:clamp(70px,8vw,140px) clamp(36px,4vw,56px);
+    align-items:end;
+  }
+  @media (max-width:860px){ .sec-head{grid-template-columns:1fr} }
+  .sec-head .meta{display:flex;flex-direction:column;gap:18px}
+  .sec-head .meta .index{font-family:var(--mono);font-size:11px;letter-spacing:.32em;color:var(--bone-mute)}
+  .sec-head h2{max-width:14ch}
+  .sec-head .blurb{color:var(--bone-dim);max-width:50ch}
+
+  /* INVENTORY */
+  .inventory{padding-bottom:clamp(70px,8vw,120px)}
+  .inv-tabs{
+    display:flex;gap:6px;flex-wrap:wrap;
+    border-top:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+    padding:18px 0;margin-bottom:clamp(36px,4vw,56px);
+    align-items:center;justify-content:space-between;
+  }
+  .inv-filters{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{
+    padding:10px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--bone-dim);border:1px solid transparent;transition:all .35s var(--ease);
+    background:transparent;cursor:pointer;
+  }
+  .chip:hover{color:var(--bone)}
+  .chip.is-active{border-color:var(--hairline-2);color:var(--bone);background:var(--graphite)}
+  .chip .count{color:var(--bronze);margin-left:6px;font-size:10px}
+
+  .inv-sort{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-mute)}
+  .inv-sort select{
+    background:transparent;color:var(--bone);border:1px solid var(--hairline-2);padding:8px 30px 8px 12px;
+    font:inherit;letter-spacing:.22em;text-transform:uppercase;
+    appearance:none;-webkit-appearance:none;
+    background-image:linear-gradient(45deg,transparent 50%, var(--bronze) 50%),linear-gradient(135deg, var(--bronze) 50%, transparent 50%);
+    background-position:calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+    background-size:5px 5px;background-repeat:no-repeat;
+  }
+
+  .inv-grid{
+    display:grid;grid-template-columns:repeat(12, 1fr);gap:clamp(20px,2vw,32px) clamp(16px,1.6vw,24px);
+  }
+  .card{
+    grid-column:span 4;
+    position:relative;
+    background:linear-gradient(180deg, var(--graphite), var(--ink-2));
+    border:1px solid var(--hairline);
+    transition:transform .55s var(--ease-out), border-color .4s, box-shadow .55s var(--ease);
+    display:flex;flex-direction:column;
+  }
+  .card.feat{grid-column:span 8;grid-row:span 2}
+  .card.wide{grid-column:span 6}
+  @media (max-width:1100px){ .card{grid-column:span 6} .card.feat{grid-column:span 12;grid-row:auto} .card.wide{grid-column:span 12} }
+  @media (max-width:640px){ .card{grid-column:span 12} }
+
+  .card:hover{border-color:var(--hairline-2);box-shadow:var(--shadow-card)}
+  .card-media{position:relative;overflow:hidden;aspect-ratio:4/3;background:#0d0d0d}
+  .card.feat .card-media{aspect-ratio:16/10}
+  .card-media img{
+    width:100%;height:100%;object-fit:cover;
+    transition:transform 1.4s var(--ease-out), filter .6s;
+    filter:saturate(.92) contrast(1.05);
+  }
+  .card:hover .card-media img{transform:scale(1.06);filter:saturate(1.05) contrast(1.08)}
+  .card-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 50%, rgba(0,0,0,.65) 100%);
+    pointer-events:none;
+  }
+  .card-tags{
+    position:absolute;top:14px;left:14px;display:flex;gap:6px;z-index:2;
+  }
+  .tag{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;
+    background:rgba(10,10,10,.7);backdrop-filter:blur(8px);
+    color:var(--bone);padding:6px 10px;border:1px solid var(--hairline);
+  }
+  .tag.bronze{color:var(--bronze);border-color:rgba(200,161,106,.4)}
+  .tag.new{color:#0a0a0a;background:var(--bronze);border-color:var(--bronze)}
+  .card-fav{
+    position:absolute;top:14px;right:14px;z-index:2;
+    width:36px;height:36px;display:grid;place-items:center;
+    background:rgba(10,10,10,.6);backdrop-filter:blur(8px);border:1px solid var(--hairline);
+    color:var(--bone);transition:all .35s;
+  }
+  .card-fav:hover{color:var(--bronze);border-color:var(--bronze)}
+
+  .card-body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
+  .card .year{font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--bone-mute)}
+  .card .title{font-family:var(--serif);font-size:clamp(22px,1.7vw,28px);line-height:1.1;letter-spacing:-.01em}
+  .card.feat .title{font-size:clamp(28px,2.4vw,40px)}
+  .card .title em{font-style:italic;color:var(--bronze);font-weight:400}
+  .card .trim{color:var(--bone-dim);font-size:13px;font-weight:300}
+  .card-specs{
+    display:flex;gap:18px;border-top:1px solid var(--hairline);padding-top:14px;
+    margin-top:auto;flex-wrap:wrap;
+  }
+  .card-specs .s{display:flex;flex-direction:column;gap:4px}
+  .card-specs .s .l{font-family:var(--mono);font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--bone-mute)}
+  .card-specs .s .v{font-family:var(--sans);font-size:13px;font-weight:500;color:var(--bone)}
+  .card-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    border-top:1px solid var(--hairline);padding-top:16px;margin-top:6px;
+  }
+  .price{font-family:var(--serif);font-size:clamp(22px,1.6vw,26px);letter-spacing:-.01em;color:var(--bone)}
+  .price small{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--bone-mute);text-transform:uppercase;font-weight:400;margin-left:6px}
+  .price.poa{font-style:italic;color:var(--bronze)}
+
+  .inv-foot{
+    display:flex;justify-content:space-between;align-items:center;gap:24px;
+    padding-top:clamp(40px,4vw,60px);border-top:1px solid var(--hairline);margin-top:clamp(40px,5vw,72px);
+    flex-wrap:wrap;
+  }
+  .inv-foot .meta{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-mute)}
+  .inv-foot .meta b{color:var(--bronze);font-weight:400}
+
+  /* WHY EARTH */
+  .why{
+    background:linear-gradient(180deg, transparent, #060606 45%);
+    padding-bottom:clamp(70px,8vw,140px);
+  }
+  .why-grid{
+    display:grid;grid-template-columns:repeat(12,1fr);gap:0;
+    border-top:1px solid var(--hairline);
+    border-left:1px solid var(--hairline);
+  }
+  .why-cell{
+    grid-column:span 4;
+    padding:clamp(28px,3vw,44px);
+    border-right:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+    min-height:280px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;
+    transition:background .5s;
+  }
+  .why-cell:hover{background:rgba(200,161,106,.025)}
+  .why-cell.span6{grid-column:span 6}
+  .why-cell .num-big{
+    font-family:var(--serif);font-size:clamp(60px,6vw,96px);line-height:.9;color:var(--bronze);
+    font-style:italic;font-weight:400;letter-spacing:-.02em;
+  }
+  .why-cell .num-big sup{font-size:.4em;font-style:normal;color:var(--bone-mute);font-family:var(--mono);letter-spacing:.2em;margin-left:6px;vertical-align:top}
+  .why-cell h3{margin-bottom:10px}
+  .why-cell p{color:var(--bone-dim);font-size:14.5px;max-width:42ch}
+  .why-cell .tag-line{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-mute)}
+  @media (max-width:900px){ .why-cell, .why-cell.span6{grid-column:span 12} }
+
+  /* SHOWROOM */
+  .showroom{
+    position:relative;padding-block:clamp(80px,9vw,160px);
+    background:#050505;overflow:hidden;
+  }
+  .showroom-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,5vw,80px);align-items:center;
+  }
+  @media (max-width:980px){ .showroom-grid{grid-template-columns:1fr} }
+  .showroom-media{
+    position:relative;aspect-ratio:5/6;
+    background:url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1400&q=80') center/cover no-repeat;
+    border:1px solid var(--hairline);
+    overflow:hidden;
+  }
+  .showroom-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 40%, rgba(0,0,0,.7));
+  }
+  .showroom-frame{position:absolute;inset:14px;border:1px solid rgba(200,161,106,.25);pointer-events:none}
+  .showroom-frame::before,.showroom-frame::after{content:"";position:absolute;width:18px;height:18px;border:1px solid var(--bronze)}
+  .showroom-frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .showroom-frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+  .showroom-stats{
+    position:absolute;left:0;right:0;bottom:0;padding:clamp(20px,2vw,32px);z-index:2;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:12px;
+  }
+  .showroom-stats .s{color:var(--bone)}
+  .showroom-stats .s .v{font-family:var(--serif);font-size:clamp(28px,2.6vw,40px);line-height:1}
+  .showroom-stats .s .l{font-family:var(--mono);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--bone-mute);margin-top:6px;display:block}
+
+  .showroom-text h2{margin-bottom:24px}
+  .showroom-text .lede{margin-bottom:32px;max-width:46ch}
+  .showroom-list{
+    list-style:none;padding:0;margin:0 0 36px;
+    display:grid;gap:0;border-top:1px solid var(--hairline);
+  }
+  .showroom-list li{
+    display:grid;grid-template-columns:90px 1fr;gap:24px;
+    padding:20px 0;border-bottom:1px solid var(--hairline);align-items:baseline;
+  }
+  .showroom-list li .k{font-family:var(--mono);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze)}
+  .showroom-list li .v{color:var(--bone);font-size:15px}
+
+  /* CATEGORIES */
+  .categories{padding-block:clamp(70px,8vw,140px)}
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hairline)}
+  .cat{
+    position:relative;aspect-ratio:3/4;overflow:hidden;
+    border-right:1px solid var(--hairline);
+    background:#000;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:clamp(20px,2vw,30px);
+  }
+  .cat:last-child{border-right:0}
+  .cat::before{
+    content:"";position:absolute;inset:0;background-size:cover;background-position:center;
+    transition:transform 1.6s var(--ease-out), filter .6s;
+    filter:grayscale(.4) brightness(.55);
+  }
+  .cat::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.85) 100%);
+  }
+  .cat:hover::before{transform:scale(1.08);filter:grayscale(0) brightness(.7)}
+  .cat > *{position:relative;z-index:2}
+  .cat .index{font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--bronze);margin-bottom:18px}
+  .cat h3{margin-bottom:12px;font-style:italic}
+  .cat p{color:var(--bone-dim);font-size:13.5px;max-width:30ch;margin:0 0 22px}
+  .cat .arrow-link{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone);
+    border-top:1px solid var(--hairline);padding-top:18px;
+  }
+  .cat .arrow-link::after{content:"→";transition:transform .4s}
+  .cat:hover .arrow-link::after{transform:translateX(6px);color:var(--bronze)}
+  .cat-1::before{background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&q=80')}
+  .cat-2::before{background-image:url('https://images.unsplash.com/photo-1542362567-b07e54358753?w=900&q=80')}
+  .cat-3::before{background-image:url('https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900&q=80')}
+  .cat-4::before{background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&q=80')}
+  @media (max-width:1000px){ .cat-grid{grid-template-columns:repeat(2,1fr)} .cat:nth-child(2){border-right:0} .cat:nth-child(-n+2){border-bottom:1px solid var(--hairline)} }
+  @media (max-width:560px){ .cat-grid{grid-template-columns:1fr} .cat{border-right:0;aspect-ratio:5/4} .cat:not(:last-child){border-bottom:1px solid var(--hairline)} }
+
+  /* CONCIERGE */
+  .concierge{
+    background:linear-gradient(180deg, #050505, var(--ink));
+    padding-block:clamp(80px,9vw,160px);
+    position:relative;overflow:hidden;
+  }
+  .concierge-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,5vw,80px);align-items:center}
+  @media (max-width:980px){ .concierge-inner{grid-template-columns:1fr} }
+  .concierge h2{margin-bottom:28px}
+  .concierge .lede{margin-bottom:40px;max-width:48ch}
+  .map-wrap{
+    position:relative;aspect-ratio:1/1;max-width:560px;margin:0 auto;
+    border:1px solid var(--hairline);background:#000;
+  }
+  .map-wrap svg{width:100%;height:100%;display:block}
+  .map-pulse{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--bronze);box-shadow:0 0 0 0 var(--bronze);transform:translate(-50%,-50%);animation:radarPulse 2.6s infinite}
+  .map-pulse::after{content:"CARROLLTON, TX";position:absolute;top:18px;left:0;font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--bronze);white-space:nowrap}
+  @keyframes radarPulse{
+    0%{box-shadow:0 0 0 0 rgba(200,161,106,.55)}
+    70%{box-shadow:0 0 0 60px rgba(200,161,106,0)}
+    100%{box-shadow:0 0 0 0 rgba(200,161,106,0)}
+  }
+  .concierge-steps{display:grid;gap:0;margin-top:36px;border-top:1px solid var(--hairline)}
+  .concierge-steps .step{
+    display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:center;
+    padding:22px 0;border-bottom:1px solid var(--hairline);
+    transition:padding .4s,background .4s;
+  }
+  .concierge-steps .step:hover{padding-inline:14px;background:rgba(200,161,106,.03)}
+  .concierge-steps .step .n{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--bronze)}
+  .concierge-steps .step .t{font-family:var(--serif);font-size:clamp(18px,1.4vw,22px);color:var(--bone)}
+  .concierge-steps .step .d{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-mute)}
+
+  /* SERVICES */
+  .services{padding-block:clamp(70px,8vw,140px)}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--hairline)}
+  @media (max-width:880px){ .svc-grid{grid-template-columns:1fr} }
+  .svc{
+    padding:clamp(36px,4vw,64px);
+    background:linear-gradient(180deg,var(--graphite),var(--ink-2));
+    position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:36px;
+    min-height:520px;
+    border-right:1px solid var(--hairline);
+  }
+  @media (max-width:880px){ .svc{border-right:0;border-bottom:1px solid var(--hairline)} }
+  .svc:last-child{border-right:0;border-bottom:0}
+  .svc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+  .svc-head .glyph{
+    width:64px;height:64px;border:1px solid var(--bronze);color:var(--bronze);
+    display:grid;place-items:center;font-family:var(--serif);font-size:28px;font-style:italic;
+    flex-shrink:0;
+  }
+  .svc h3{font-style:italic;margin-bottom:18px}
+  .svc p{color:var(--bone-dim);max-width:40ch;font-size:15px}
+  .svc-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .svc-list li{
+    display:flex;gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--bone-dim);padding-left:18px;position:relative;
+  }
+  .svc-list li::before{content:"";position:absolute;left:0;top:6px;width:8px;height:1px;background:var(--bronze)}
+
+  /* TESTIMONIALS */
+  .testimonials{
+    padding-block:clamp(80px,9vw,160px);
+    background:#060606;
+    position:relative;overflow:hidden;
+  }
+  .testimonials::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(60% 60% at 50% 0%, rgba(200,161,106,.07), transparent 70%);
+    pointer-events:none;
+  }
+  .quote-stage{
+    display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,3vw,48px);
+    margin-top:clamp(20px,2vw,40px);position:relative;
+    transition:opacity .5s, transform .6s;
+  }
+  .quote-mark{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(120px,14vw,220px);line-height:.7;color:var(--bronze);opacity:.35;
+  }
+  .quote-body blockquote{
+    font-family:var(--serif);font-size:clamp(24px,2.6vw,40px);line-height:1.25;letter-spacing:-.01em;
+    color:var(--bone);max-width:24ch;margin:0 0 32px;
+    min-height:5em;
+  }
+  .quote-body blockquote em{font-style:italic;color:var(--bronze)}
+  .quote-meta{display:flex;align-items:center;gap:18px;margin-bottom:32px}
+  .quote-meta .avatar{
+    width:54px;height:54px;border-radius:50%;border:1px solid var(--bronze);
+    display:grid;place-items:center;color:var(--bronze);font-family:var(--serif);font-size:18px;font-style:italic;
+  }
+  .quote-meta .who strong{font-family:var(--sans);font-weight:500;font-size:15px;display:block;color:var(--bone)}
+  .quote-meta .who span{font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-mute)}
+  .quote-stars{display:flex;gap:4px;color:var(--bronze);margin-bottom:24px;letter-spacing:.2em}
+  .q-controls{display:flex;gap:10px;align-items:center;border-top:1px solid var(--hairline);padding-top:24px;flex-wrap:wrap}
+  .q-controls button{
+    width:48px;height:48px;border:1px solid var(--hairline-2);color:var(--bone);
+    display:grid;place-items:center;transition:all .35s;
+  }
+  .q-controls button:hover{border-color:var(--bronze);color:var(--bronze)}
+  .q-progress{flex:1;height:1px;background:var(--hairline);position:relative;margin-inline:18px;max-width:240px;min-width:80px}
+  .q-fill{position:absolute;left:0;top:0;height:100%;background:var(--bronze);transition:width .6s var(--ease);width:16.6%}
+  .q-counter{font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--bone-mute)}
+
+  /* CONTACT */
+  .contact{padding-block:clamp(80px,9vw,160px) clamp(60px,7vw,120px)}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,5vw,80px)}
+  @media (max-width:980px){ .contact-grid{grid-template-columns:1fr} }
+  .contact h2{margin-bottom:28px}
+  .contact-info{display:grid;gap:0;border-top:1px solid var(--hairline);margin-top:36px}
+  .contact-info dl{
+    margin:0;display:grid;grid-template-columns:120px 1fr;gap:24px;
+    padding:22px 0;border-bottom:1px solid var(--hairline);align-items:baseline;
+  }
+  .contact-info dt{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--bone-mute);margin:0}
+  .contact-info dd{margin:0;color:var(--bone);font-size:16px}
+  .contact-info dd a{transition:color .3s}
+  .contact-info dd a:hover{color:var(--bronze)}
+  .contact-info dd .big{font-family:var(--serif);font-size:clamp(26px,2vw,32px);letter-spacing:-.01em}
+
+  .contact-form{
+    background:linear-gradient(180deg,var(--graphite),var(--ink-2));
+    border:1px solid var(--hairline);
+    padding:clamp(28px,3vw,44px);
+  }
+  .contact-form h3{font-style:italic;margin-bottom:8px}
+  .contact-form p.sub{color:var(--bone-dim);font-size:14px;margin:0 0 28px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  @media (max-width:560px){ .form-row{grid-template-columns:1fr} }
+  .field{position:relative}
+  .field label{
+    position:absolute;left:0;top:14px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-mute);
+    transition:transform .35s var(--ease), color .35s, font-size .35s;pointer-events:none;
+  }
+  .field input,.field textarea,.field select{
+    width:100%;background:transparent;border:0;border-bottom:1px solid var(--hairline-2);
+    color:var(--bone);font:inherit;font-size:15px;padding:14px 0 12px;outline:none;
+    transition:border-color .4s;
+  }
+  .field textarea{min-height:90px;resize:vertical}
+  .field select{appearance:none;-webkit-appearance:none;cursor:pointer;color:var(--bone-dim)}
+  .field:focus-within label,
+  .field input:not(:placeholder-shown) ~ label,
+  .field textarea:not(:placeholder-shown) ~ label,
+  .field.has-val label{
+    transform:translateY(-22px);font-size:9.5px;color:var(--bronze);letter-spacing:.3em;
+  }
+  .field:focus-within input,
+  .field:focus-within textarea,
+  .field:focus-within select{border-bottom-color:var(--bronze)}
+  .form-foot{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .check{display:flex;gap:10px;align-items:flex-start;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-mute);max-width:30ch}
+  .check input{accent-color:var(--bronze);margin-top:2px}
+
+  /* FOOTER */
+  footer{
+    background:#000;border-top:1px solid var(--hairline);
+    padding:clamp(60px,7vw,100px) 0 32px;
+    position:relative;overflow:hidden;
+  }
+  .foot-mega{
+    font-family:var(--serif);font-size:clamp(60px,12vw,200px);line-height:.85;letter-spacing:-.025em;
+    color:transparent;-webkit-text-stroke:1px rgba(200,161,106,.18);
+    margin-bottom:clamp(40px,5vw,80px);
+    pointer-events:none;font-weight:500;
+  }
+  .foot-mega em{font-style:italic;-webkit-text-stroke:1px rgba(200,161,106,.32)}
+  .foot-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;
+    padding-top:clamp(40px,4vw,60px);border-top:1px solid var(--hairline);
+  }
+  @media (max-width:900px){ .foot-grid{grid-template-columns:1fr 1fr} }
+  @media (max-width:560px){ .foot-grid{grid-template-columns:1fr} }
+  .foot-grid h4{margin-bottom:18px}
+  .foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .foot-grid ul a{color:var(--bone-dim);font-size:14px;transition:color .3s}
+  .foot-grid ul a:hover{color:var(--bronze)}
+  .foot-brand p{color:var(--bone-dim);font-size:14px;max-width:32ch;margin:14px 0 24px}
+  .foot-bottom{
+    display:flex;justify-content:space-between;align-items:center;gap:24px;
+    margin-top:clamp(40px,5vw,80px);padding-top:24px;border-top:1px solid var(--hairline);
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-mute);
+    flex-wrap:wrap;
+  }
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease-out), transform 1s var(--ease-out)}
+  .reveal.in{opacity:1;transform:translateY(0)}
+  .reveal-stagger > *{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease-out), transform .9s var(--ease-out)}
+  .reveal-stagger.in > *{opacity:1;transform:translateY(0)}
+  .reveal-stagger.in > *:nth-child(1){transition-delay:.05s}
+  .reveal-stagger.in > *:nth-child(2){transition-delay:.12s}
+  .reveal-stagger.in > *:nth-child(3){transition-delay:.19s}
+  .reveal-stagger.in > *:nth-child(4){transition-delay:.26s}
+  .reveal-stagger.in > *:nth-child(5){transition-delay:.33s}
+  .reveal-stagger.in > *:nth-child(6){transition-delay:.4s}
+  .reveal-stagger.in > *:nth-child(7){transition-delay:.47s}
+  .reveal-stagger.in > *:nth-child(8){transition-delay:.54s}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto}
+    .hero-bg img{transform:none}
+    .reveal,.reveal-stagger>*{opacity:1;transform:none}
+    .hero h1 .row span{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar" role="region" aria-label="Dealership status">
+  <div class="container">
+    <div class="left">
+      <span><i class="pulse"></i>Showroom Open · Today 9–7</span>
+      <span class="hide-sm">3216 Kellway Dr · Carrollton, TX</span>
+      <span class="hide-sm">Nationwide Delivery Available</span>
+    </div>
+    <div class="right">
+      <a href="tel:2144839040">Sales · 214-483-9040</a>
+      <a href="#contact">Schedule a Visit</a>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Earth MotorCars Home">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span class="brand-name">
+        <strong>Earth MotorCars</strong>
+        <span>Carrollton · Est. 2006</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#showroom">Showroom</a></li>
+        <li><a href="#financing">Financing</a></li>
+        <li><a href="#sell">Sell / Consign</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <button class="icon-btn" aria-label="Search inventory">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a class="btn btn--solid" href="#inventory"><span>Browse Inventory</span><span class="arrow"></span></a>
+      <button class="icon-btn menu-btn" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?w=2400&q=85" alt="Cinematic side profile of an exotic supercar in low light" />
+  </div>
+  <div class="hero-meta">
+    <div>32.987° N · 96.885° W</div>
+    <div class="crosshair" aria-hidden="true"></div>
+    <div>EST · MMVI</div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-eyebrow eyebrow"><span class="line"></span>America's Destination · Premier Automobiles</div>
+    <h1 class="display">
+      <span class="row"><span>The world's most</span></span>
+      <span class="row"><span><em>extraordinary</em> machines,</span></span>
+      <span class="row"><span>under one roof.</span></span>
+    </h1>
+    <div class="hero-sub-row">
+      <p class="hero-sub">
+        Earth MotorCars is the destination for collectors and enthusiasts seeking exotic, iconic classic, and bespoke luxury automobiles — curated by a team that lives the obsession, delivered nationwide from our 70,000-square-foot showroom in Carrollton, Texas.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn--solid" href="#inventory"><span>Browse Inventory</span><span class="arrow"></span></a>
+        <a class="btn" href="#contact"><span>Schedule a Visit</span><span class="arrow"></span></a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="v"><em>300</em><span class="num">+</span></div><span class="l">Vehicles in Stock</span></div>
+      <div class="stat"><div class="v">70,000<span class="num"> ft²</span></div><span class="l">Climate-Controlled Showroom</span></div>
+      <div class="stat"><div class="v">50</div><span class="l">States Served</span></div>
+      <div class="stat"><div class="v">19<em> yrs</em></div><span class="l">Of Concierge Buying</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="bar" aria-hidden="true"></div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Ferrari <span class="dot"></span> Lamborghini <span class="dot"></span> Porsche <span class="dot"></span> McLaren <span class="dot"></span> Aston Martin <span class="dot"></span> Bentley <span class="dot"></span> Rolls-Royce <span class="dot"></span> Mercedes-AMG <span class="dot"></span> Bugatti <span class="dot"></span> Shelby <span class="dot"></span> Singer <span class="dot"></span> Pagani <span class="dot"></span></span>
+    <span>Ferrari <span class="dot"></span> Lamborghini <span class="dot"></span> Porsche <span class="dot"></span> McLaren <span class="dot"></span> Aston Martin <span class="dot"></span> Bentley <span class="dot"></span> Rolls-Royce <span class="dot"></span> Mercedes-AMG <span class="dot"></span> Bugatti <span class="dot"></span> Shelby <span class="dot"></span> Singer <span class="dot"></span> Pagani <span class="dot"></span></span>
+  </div>
+</div>
+
+<section class="inventory" id="inventory">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="meta">
+        <span class="index">— 01 / The Collection</span>
+        <h2 class="display">A curated <em>library</em> of automotive milestones.</h2>
+      </div>
+      <p class="blurb lede">From hand-built modern hypercars to numbers-matching classics and bespoke long-wheelbase luxury, every vehicle on the floor is photographed in our studio, mechanically inspected, and presented with full provenance. New arrivals weekly.</p>
+    </div>
+
+    <div class="inv-tabs reveal">
+      <div class="inv-filters" role="tablist">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="count">312</span></button>
+        <button class="chip" data-filter="exotic" role="tab">Exotic <span class="count">48</span></button>
+        <button class="chip" data-filter="classic" role="tab">Classic <span class="count">71</span></button>
+        <button class="chip" data-filter="luxury" role="tab">Luxury <span class="count">132</span></button>
+        <button class="chip" data-filter="performance" role="tab">Performance <span class="count">61</span></button>
+      </div>
+      <div class="inv-sort">
+        <span>Sort</span>
+        <select aria-label="Sort inventory">
+          <option>Newest Arrivals</option>
+          <option>Price · High to Low</option>
+          <option>Price · Low to High</option>
+          <option>Year · Newest</option>
+          <option>Year · Oldest</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="inv-grid reveal-stagger" id="invGrid">
+      <article class="card feat" data-cat="exotic">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80" alt="Lamborghini Huracán Performante exterior in studio lighting" />
+          <div class="card-tags">
+            <span class="tag new">New Arrival</span>
+            <span class="tag bronze">Featured</span>
+            <span class="tag">1 of 24</span>
+          </div>
+          <button class="card-fav" aria-label="Save to favorites">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+        </div>
+        <div class="card-body">
+          <span class="year">2023 · MILEAGE 1,487</span>
+          <h3 class="title">Lamborghini Huracán <em>STO</em></h3>
+          <p class="trim">Blu Laufey over Nero Cosmus · Carbon Pack · Lifting System · Sport Exhaust</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">5.2L V10</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">631 hp</span></div>
+            <div class="s"><span class="l">0–60</span><span class="v">2.8 s</span></div>
+            <div class="s"><span class="l">Drive</span><span class="v">RWD</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$389,500</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="classic">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=900&q=80" alt="Classic American muscle car detail" />
+          <div class="card-tags"><span class="tag bronze">Concours</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">1967 · MILEAGE 42,118</span>
+          <h3 class="title">Shelby <em>GT500</em></h3>
+          <p class="trim">Numbers Matching · Marti Report · Frame-Off Restoration</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">428 ci V8</span></div>
+            <div class="s"><span class="l">Trans</span><span class="v">4-Spd MT</span></div>
+            <div class="s"><span class="l">Color</span><span class="v">Nightmist</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$184,900</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="luxury">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=900&q=80" alt="Black Mercedes wheel and quarter panel detail" />
+          <div class="card-tags"><span class="tag">Single Owner</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2024 · MILEAGE 2,940</span>
+          <h3 class="title">Rolls-Royce <em>Cullinan</em></h3>
+          <p class="trim">Black Badge · Starlight Headliner · Bespoke Two-Tone</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">6.75L V12</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">600 hp</span></div>
+            <div class="s"><span class="l">Drive</span><span class="v">AWD</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$418,000</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card wide" data-cat="exotic">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1400&q=80" alt="McLaren in motion on closed road" />
+          <div class="card-tags"><span class="tag bronze">Spec'd From New</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2022 · MILEAGE 6,210</span>
+          <h3 class="title">McLaren <em>765LT</em> Spider</h3>
+          <p class="trim">MSO Volcano Yellow · Full Carbon Pack · Lift · Senna Seats</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">4.0L V8 TT</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">755 hp</span></div>
+            <div class="s"><span class="l">0–60</span><span class="v">2.7 s</span></div>
+            <div class="s"><span class="l">Top</span><span class="v">205 mph</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price poa">Price on Request</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card wide" data-cat="performance">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1611521596021-7e2f8cc2c1ff?w=1400&q=80" alt="Porsche 911 GT3 in racing trim" />
+          <div class="card-tags"><span class="tag">Manual</span><span class="tag">PCCB</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2023 · MILEAGE 3,802</span>
+          <h3 class="title">Porsche 911 <em>GT3</em> Touring</h3>
+          <p class="trim">Shark Blue · 6-Speed Manual · Front Lift · Carbon Roof</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">4.0L Flat-6</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">502 hp</span></div>
+            <div class="s"><span class="l">Trans</span><span class="v">6-MT</span></div>
+            <div class="s"><span class="l">Brakes</span><span class="v">PCCB</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$284,750</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="exotic">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=900&q=80" alt="Ferrari front three-quarter detail" />
+          <div class="card-tags"><span class="tag new">Just Arrived</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2021 · MILEAGE 4,118</span>
+          <h3 class="title">Ferrari <em>F8</em> Tributo</h3>
+          <p class="trim">Rosso Corsa · Daytona Seats · Carbon Driver Zone · Lift</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">3.9L V8 TT</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">710 hp</span></div>
+            <div class="s"><span class="l">0–60</span><span class="v">2.9 s</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$329,900</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="luxury">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900&q=80" alt="Bentley Continental GT studio shot" />
+          <div class="card-tags"><span class="tag">Mulliner</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2024 · MILEAGE 1,902</span>
+          <h3 class="title">Bentley <em>Continental GT</em> Speed</h3>
+          <p class="trim">Verdant · Mulliner Specification · Naim Audio · Rotating Display</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">6.0L W12</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">650 hp</span></div>
+            <div class="s"><span class="l">Drive</span><span class="v">AWD</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$298,500</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="classic">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c5303bea?w=900&q=80" alt="Vintage Mercedes 280SL pagoda detail" />
+          <div class="card-tags"><span class="tag bronze">Investment Grade</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">1971 · MILEAGE 68,400</span>
+          <h3 class="title">Mercedes-Benz <em>280 SL</em> Pagoda</h3>
+          <p class="trim">Silver Metallic · Both Tops · Restored 2019 · Documented</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">2.8L I6</span></div>
+            <div class="s"><span class="l">Trans</span><span class="v">4-Spd Auto</span></div>
+            <div class="s"><span class="l">Color</span><span class="v">Astralsilber</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$118,500</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="performance">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=900&q=80" alt="Aston Martin in dramatic lighting" />
+          <div class="card-tags"><span class="tag">Q-Spec</span></div>
+          <button class="card-fav" aria-label="Save to favorites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="year">2023 · MILEAGE 2,201</span>
+          <h3 class="title">Aston Martin <em>DB12</em></h3>
+          <p class="trim">Q Satin Xenon Grey · 21" Forged · Bowers & Wilkins</p>
+          <div class="card-specs">
+            <div class="s"><span class="l">Engine</span><span class="v">4.0L V8 TT</span></div>
+            <div class="s"><span class="l">Power</span><span class="v">671 hp</span></div>
+            <div class="s"><span class="l">0–60</span><span class="v">3.5 s</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price">$262,400</div>
+            <a class="link-arrow" href="#">View Vehicle</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="inv-foot">
+      <div class="meta">Showing <b>9</b> of <b>312</b> vehicles · New arrivals every Tuesday</div>
+      <a class="btn" href="#"><span>View Entire Inventory</span><span class="arrow"></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="meta">
+        <span class="index">— 02 / The Standard</span>
+        <h2 class="display">Built for the <em>obsessive</em>.</h2>
+      </div>
+      <p class="blurb lede">Nineteen years of disciplined sourcing, mechanical inspection, and white-glove service have made Earth MotorCars the dealership enthusiasts trust to handle the cars that matter most.</p>
+    </div>
+
+    <div class="why-grid reveal">
+      <article class="why-cell">
+        <div class="num-big">300<sup>+</sup></div>
+        <div>
+          <h3>The deepest floor in the region.</h3>
+          <p>From investment-grade classics to current-spec exotics and bespoke luxury, our showroom maintains over three hundred vehicles in active rotation.</p>
+        </div>
+        <span class="tag-line">— Curated Inventory</span>
+      </article>
+
+      <article class="why-cell">
+        <div class="num-big">70<sup>K ft²</sup></div>
+        <div>
+          <h3>A facility built around the cars.</h3>
+          <p>Climate-controlled, gallery-lit, and engineered to display each vehicle the way it deserves to be seen — never crammed onto a lot.</p>
+        </div>
+        <span class="tag-line">— Carrollton, Texas</span>
+      </article>
+
+      <article class="why-cell">
+        <div class="num-big">50<sup>states</sup></div>
+        <div>
+          <h3>Buy from anywhere, with confidence.</h3>
+          <p>Enclosed transport, full pre-purchase video walkarounds, and a dedicated specialist on every deal. Most of our buyers never set foot in Texas.</p>
+        </div>
+        <span class="tag-line">— Nationwide Concierge</span>
+      </article>
+
+      <article class="why-cell span6">
+        <div class="num-big" style="font-style:italic">II</div>
+        <div>
+          <h3>A team of specialists, not salespeople.</h3>
+          <p>Our advisors are enthusiasts and historians — collectively decades of experience across Italian exotics, German performance, British luxury, and American classics. They drive what they sell.</p>
+        </div>
+        <span class="tag-line">— Experienced Staff</span>
+      </article>
+
+      <article class="why-cell span6">
+        <div class="num-big" style="font-style:italic">III</div>
+        <div>
+          <h3>Financing that actually works for the cars we sell.</h3>
+          <p>Specialty lender relationships built specifically for exotic, classic, and high-line luxury — including collector loans, balloon structures, and bespoke programs.</p>
+        </div>
+        <span class="tag-line">— Tailored Financing</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="showroom" id="showroom">
+  <div class="container">
+    <div class="sec-head reveal" style="padding-bottom:0">
+      <div class="meta">
+        <span class="index">— 03 / The Showroom</span>
+        <h2 class="display">A <em>destination</em><br/>worth the drive.</h2>
+      </div>
+      <p class="blurb lede">Step inside seventy thousand square feet purpose-built for the most significant automobiles in the country. Polished concrete, museum lighting, and a private viewing lounge for serious appointments.</p>
+    </div>
+
+    <div class="showroom-grid" style="margin-top:60px">
+      <div class="showroom-media reveal">
+        <div class="showroom-frame"></div>
+        <div class="showroom-stats">
+          <div class="s"><div class="v num">70,000</div><span class="l">Square Feet</span></div>
+          <div class="s"><div class="v num">300+</div><span class="l">Vehicles On Floor</span></div>
+          <div class="s"><div class="v num">68°F</div><span class="l">Climate Held</span></div>
+        </div>
+      </div>
+      <div class="showroom-text reveal-stagger">
+        <p class="eyebrow"><span class="dot"></span>Carrollton · TX</p>
+        <h3 class="display" style="margin:14px 0 22px">An environment that <em>respects</em> the vehicle.</h3>
+        <p class="lede">When you cross-shop a six-figure automobile, the room matters. The lighting matters. The way the floor reflects the headlights matters. We built this place with that in mind — and it shows the moment you walk in.</p>
+
+        <ul class="showroom-list">
+          <li><span class="k">Lighting</span><span class="v">Museum-grade gallery lighting tuned to neutral 4000K</span></li>
+          <li><span class="k">Climate</span><span class="v">Independently zoned humidity & temperature control</span></li>
+          <li><span class="k">Lounge</span><span class="v">Private viewing suites by appointment</span></li>
+          <li><span class="k">Hours</span><span class="v">Mon – Sat · 9 – 7 · Sundays by request</span></li>
+          <li><span class="k">Address</span><span class="v">3216 Kellway Drive · Carrollton, TX 75006</span></li>
+        </ul>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <a class="btn btn--solid" href="#contact"><span>Schedule a Visit</span><span class="arrow"></span></a>
+          <a class="btn" href="https://maps.google.com/?q=3216+Kellway+Drive+Carrollton+TX" target="_blank" rel="noopener"><span>Get Directions</span><span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="meta">
+        <span class="index">— 04 / Collections</span>
+        <h2 class="display">Four collections.<br/><em>One philosophy.</em></h2>
+      </div>
+      <p class="blurb lede">Whether you arrive seeking a numbers-matching restoration or the latest production hypercar, every vehicle we sell answers the same question: is this one of the best of its kind?</p>
+    </div>
+  </div>
+
+  <div class="cat-grid reveal">
+    <a href="#inventory" class="cat cat-1">
+      <div class="index">— Collection I</div>
+      <h3 class="display">Exotic</h3>
+      <p>Lamborghini, Ferrari, McLaren, Pagani — the production machines that move metal at the auctions.</p>
+      <span class="arrow-link">View 48 Vehicles</span>
+    </a>
+    <a href="#inventory" class="cat cat-2">
+      <div class="index">— Collection II</div>
+      <h3 class="display">Classic</h3>
+      <p>Air-cooled, big-block, and significant — pre-war coachwork to '90s analog icons, fully sorted.</p>
+      <span class="arrow-link">View 71 Vehicles</span>
+    </a>
+    <a href="#inventory" class="cat cat-3">
+      <div class="index">— Collection III</div>
+      <h3 class="display">Luxury</h3>
+      <p>Bentley, Rolls-Royce, Range Rover, Mercedes-Maybach — the daily-driver expression of taste.</p>
+      <span class="arrow-link">View 132 Vehicles</span>
+    </a>
+    <a href="#inventory" class="cat cat-4">
+      <div class="index">— Collection IV</div>
+      <h3 class="display">Performance</h3>
+      <p>Porsche GT, AMG Black Series, Z06, M-spec — the pure-driver bench that earns the chrono.</p>
+      <span class="arrow-link">View 61 Vehicles</span>
+    </a>
+  </div>
+</section>
+
+<section class="concierge" id="concierge">
+  <div class="container concierge-inner">
+    <div class="reveal">
+      <div class="map-wrap" aria-hidden="true">
+        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="usg" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#1a1a1a"/>
+              <stop offset="100%" stop-color="#0a0a0a"/>
+            </linearGradient>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(200,161,106,.06)" stroke-width=".5"/>
+            </pattern>
+          </defs>
+          <rect width="500" height="300" fill="url(#usg)"/>
+          <rect width="500" height="300" fill="url(#grid)"/>
+          <path d="M50,110 L80,95 L120,90 L160,85 L210,82 L260,80 L310,82 L360,86 L400,92 L430,100 L450,118 L455,140 L450,165 L440,185 L420,205 L390,220 L355,225 L320,224 L290,228 L260,232 L235,236 L210,232 L180,225 L150,215 L120,200 L95,182 L75,160 L60,138 Z"
+                fill="rgba(200,161,106,.05)" stroke="rgba(200,161,106,.35)" stroke-width="1"/>
+          <g stroke="rgba(200,161,106,.5)" stroke-width=".8" fill="none" stroke-dasharray="2 4">
+            <path d="M255,178 Q190,150 90,130"/>
+            <path d="M255,178 Q190,140 130,100"/>
+            <path d="M255,178 Q220,130 180,90"/>
+            <path d="M255,178 Q260,130 280,90"/>
+            <path d="M255,178 Q310,130 360,95"/>
+            <path d="M255,178 Q360,150 420,118"/>
+            <path d="M255,178 Q380,180 440,170"/>
+            <path d="M255,178 Q330,210 380,225"/>
+            <path d="M255,178 Q260,220 240,238"/>
+            <path d="M255,178 Q195,210 140,210"/>
+          </g>
+          <circle cx="255" cy="178" r="4" fill="#c8a16a"/>
+        </svg>
+        <div class="map-pulse" style="left:51%;top:59%"></div>
+      </div>
+    </div>
+
+    <div class="reveal-stagger">
+      <p class="eyebrow"><span class="dot"></span>— 05 / Nationwide Concierge</p>
+      <h2 class="display">Most of our buyers live <em>nowhere near Texas.</em></h2>
+      <p class="lede">We deliver coast to coast. From the moment you express interest, a single specialist owns the relationship — through walk-around video, third-party inspection, paperwork, and enclosed door-to-door transport.</p>
+
+      <div class="concierge-steps">
+        <div class="step"><span class="n">01</span><span class="t">Personal walkaround video & full studio gallery</span><span class="d">Same Day</span></div>
+        <div class="step"><span class="n">02</span><span class="t">Third-party inspection welcomed and arranged</span><span class="d">48 Hours</span></div>
+        <div class="step"><span class="n">03</span><span class="t">E-signed paperwork & dedicated finance manager</span><span class="d">Same Week</span></div>
+        <div class="step"><span class="n">04</span><span class="t">Enclosed, insured, single-load transport to your door</span><span class="d">3–7 Days</span></div>
+      </div>
+
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
+        <a class="btn btn--solid" href="#contact"><span>Speak With a Specialist</span><span class="arrow"></span></a>
+        <a class="btn btn--ghost" href="tel:2144839040"><span>Call · 214-483-9040</span><span class="arrow"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="financing">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="meta">
+        <span class="index">— 06 / Services</span>
+        <h2 class="display"><em>Financing</em>, trade, and consignment — handled.</h2>
+      </div>
+      <p class="blurb lede">The two transactions that determine whether buying a special car feels seamless or stressful. We do both in-house, with relationships built specifically for the kinds of vehicles we sell.</p>
+    </div>
+
+    <div class="svc-grid reveal-stagger">
+      <article class="svc">
+        <div class="svc-head">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>Tailored Financing</p>
+            <h3 class="display" style="margin-top:14px">Lending built<br/>for <em>this</em> floor.</h3>
+          </div>
+          <div class="glyph">$</div>
+        </div>
+        <p>Decades of relationships with specialty lenders mean we secure terms most banks can't even quote — including collector vehicle loans, balloon structures, and bespoke high-value programs.</p>
+        <ul class="svc-list">
+          <li>Exotic & classic vehicle loan programs</li>
+          <li>Up to 144-month collector terms</li>
+          <li>Soft-pull pre-qualification in 60 seconds</li>
+          <li>Pre-approved offers travel with you</li>
+          <li>Dedicated finance manager · always</li>
+        </ul>
+        <a class="btn" href="#contact" id="get-financing"><span>Get Financing</span><span class="arrow"></span></a>
+      </article>
+
+      <article class="svc" id="sell">
+        <div class="svc-head">
+          <div>
+            <p class="eyebrow"><span class="dot"></span>Sell · Trade · Consign</p>
+            <h3 class="display" style="margin-top:14px">A higher floor for<br/>your <em>vehicle.</em></h3>
+          </div>
+          <div class="glyph">↺</div>
+        </div>
+        <p>Whether you're trading into a new acquisition, selling outright, or consigning to our floor, we operate at the level your car deserves — confidential, expedited, and priced to the global market.</p>
+        <ul class="svc-list">
+          <li>Same-day cash offers · no obligation</li>
+          <li>Full studio photography on consignment</li>
+          <li>National marketplace exposure</li>
+          <li>Discreet handling for high-profile owners</li>
+          <li>Trade equity into any vehicle on the floor</li>
+        </ul>
+        <a class="btn" href="#contact"><span>Sell Your Vehicle</span><span class="arrow"></span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="meta">
+        <span class="index">— 07 / The Word</span>
+        <h2 class="display">From the people<br/>who <em>own</em> these cars.</h2>
+      </div>
+      <p class="blurb lede">Five-star reviews from collectors, enthusiasts, and first-time exotic owners across the country. Every vehicle has a story — and it usually continues long after the keys change hands.</p>
+    </div>
+
+    <div class="quote-stage reveal" id="quoteStage">
+      <div class="quote-mark">"</div>
+      <div class="quote-body">
+        <div class="quote-stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote id="qText"></blockquote>
+        <div class="quote-meta">
+          <div class="avatar" id="qAvatar">M</div>
+          <div class="who">
+            <strong id="qName">Marcus Reinholt</strong>
+            <span id="qLoc">Pacific Heights, CA · 2023 Lamborghini Huracán STO</span>
+          </div>
+        </div>
+        <div class="q-controls">
+          <button id="qPrev" aria-label="Previous testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button id="qNext" aria-label="Next testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <div class="q-progress"><span class="q-fill" id="qFill"></span></div>
+          <span class="q-counter"><span id="qNow">01</span> · <span id="qTotal">06</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-head reveal" style="padding-bottom:0">
+      <div class="meta">
+        <span class="index">— 08 / Visit</span>
+        <h2 class="display">Come <em>see</em> the floor.</h2>
+      </div>
+      <p class="blurb lede">Whether you're flying in from out of state or driving in from across Dallas-Fort Worth, we'd be glad to host you. Appointments encouraged but never required.</p>
+    </div>
+
+    <div class="contact-grid" style="margin-top:60px">
+      <div class="reveal">
+        <h3 class="display" style="font-style:italic">Earth MotorCars,<br/>Carrollton.</h3>
+        <p class="lede" style="margin-top:18px">Twenty minutes north of downtown Dallas. Twelve minutes from DFW International. Ample private parking, complimentary refreshments, and a viewing lounge reserved for guests.</p>
+
+        <div class="contact-info">
+          <dl><dt>Address</dt><dd>3216 Kellway Drive<br/>Carrollton, Texas 75006</dd></dl>
+          <dl><dt>Sales</dt><dd><a href="tel:2144839040" class="big">214-483-9040</a></dd></dl>
+          <dl><dt>Hours</dt><dd>Monday – Saturday · 9 AM – 7 PM<br/>Sunday · By Appointment</dd></dl>
+          <dl><dt>Email</dt><dd><a href="mailto:concierge@earthmotorcars.com">concierge@earthmotorcars.com</a></dd></dl>
+          <dl><dt>From</dt><dd>DFW Intl. · 12 min<br/>Downtown Dallas · 22 min<br/>Fort Worth · 38 min</dd></dl>
+        </div>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px">
+          <a class="btn btn--solid" href="https://maps.google.com/?q=3216+Kellway+Drive+Carrollton+TX" target="_blank" rel="noopener"><span>Open in Maps</span><span class="arrow"></span></a>
+          <a class="btn" href="tel:2144839040"><span>Call Sales</span><span class="arrow"></span></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Schedule a Visit</h3>
+        <p class="sub">Tell us a little about what you're looking for — a specialist will respond within the business day.</p>
+
+        <div class="form-row">
+          <div class="field"><input type="text" id="fn" placeholder=" " required /><label for="fn">First Name</label></div>
+          <div class="field"><input type="text" id="ln" placeholder=" " required /><label for="ln">Last Name</label></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><input type="email" id="em" placeholder=" " required /><label for="em">Email</label></div>
+          <div class="field"><input type="tel" id="ph" placeholder=" " /><label for="ph">Phone</label></div>
+        </div>
+        <div class="form-row">
+          <div class="field has-val">
+            <select id="int">
+              <option>Specific Vehicle Inquiry</option>
+              <option>Browse Inventory · Showroom Visit</option>
+              <option>Financing</option>
+              <option>Sell · Trade · Consign</option>
+              <option>Out-of-State Buyer</option>
+              <option>Other</option>
+            </select>
+            <label for="int">Interest</label>
+          </div>
+          <div class="field has-val">
+            <select id="when">
+              <option>This Week</option>
+              <option>Next Week</option>
+              <option>Within 30 Days</option>
+              <option>Just Browsing</option>
+            </select>
+            <label for="when">Timing</label>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:8px">
+          <textarea id="msg" placeholder=" "></textarea>
+          <label for="msg">Notes · Vehicle of Interest</label>
+        </div>
+
+        <div class="form-foot">
+          <label class="check"><input type="checkbox" /><span>I'd like Earth MotorCars to contact me about new arrivals matching my interests.</span></label>
+          <button type="submit" class="btn btn--solid"><span>Submit Inquiry</span><span class="arrow"></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-mega">Earth <em>MotorCars</em></div>
+
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">E</span>
+          <span class="brand-name">
+            <strong>Earth MotorCars</strong>
+            <span>Carrollton · Est. 2006</span>
+          </span>
+        </a>
+        <p>America's destination for premier exotic, iconic classic, and bespoke luxury automobiles. Curated for collectors. Delivered nationwide.</p>
+        <div style="display:flex;gap:10px">
+          <a class="icon-btn" href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 9V7a2 2 0 0 1 2-2h2V2h-3a5 5 0 0 0-5 5v2H8v3h2v8h3v-8h2.5l.5-3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Inventory</h4>
+        <ul>
+          <li><a href="#">All Vehicles</a></li>
+          <li><a href="#">Exotic</a></li>
+          <li><a href="#">Classic</a></li>
+          <li><a href="#">Luxury</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#financing">Financing</a></li>
+          <li><a href="#sell">Sell Your Vehicle</a></li>
+          <li><a href="#sell">Trade-In</a></li>
+          <li><a href="#sell">Consignment</a></li>
+          <li><a href="#concierge">Nationwide Delivery</a></li>
+          <li><a href="#contact">Schedule a Visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>3216 Kellway Drive</li>
+          <li>Carrollton, TX 75006</li>
+          <li><a href="tel:2144839040">214-483-9040</a></li>
+          <li>Mon – Sat · 9 – 7</li>
+          <li>Sun · By Appointment</li>
+          <li><a href="mailto:concierge@earthmotorcars.com">concierge@earthmotorcars.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Earth MotorCars · All Rights Reserved</span>
+      <span>Carrollton · Texas · 32.987° N · 96.885° W</span>
+      <span><a href="#">Privacy</a> · <a href="#">Accessibility</a> · <a href="#">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* STICKY HEADER */
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 32);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+/* REVEAL OBSERVER */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>io.observe(el));
+
+/* INVENTORY FILTER */
+const chips = document.querySelectorAll('.chip');
+const cards = document.querySelectorAll('#invGrid .card');
+chips.forEach(chip=>{
+  chip.addEventListener('click', ()=>{
+    chips.forEach(c=>{c.classList.remove('is-active'); c.setAttribute('aria-selected','false')});
+    chip.classList.add('is-active'); chip.setAttribute('aria-selected','true');
+    const f = chip.dataset.filter;
+    cards.forEach(card=>{
+      const match = (f === 'all' || card.dataset.cat === f);
+      card.style.transition = 'opacity .4s, transform .5s';
+      if(match){
+        card.style.display = '';
+        requestAnimationFrame(()=>{
+          card.style.opacity = 1; card.style.transform = 'translateY(0)';
+        });
+      } else {
+        card.style.opacity = 0; card.style.transform = 'translateY(8px)';
+        setTimeout(()=>{card.style.display = 'none'}, 380);
+      }
+    });
+  });
+});
+
+/* TESTIMONIAL CAROUSEL — DOM-built, no innerHTML */
+const testimonials = [
+  {parts:[{t:'Bought my '},{t:'Huracán STO',em:true},{t:' sight-unseen from California. Walkaround video the same day, inspection welcomed, transport arrived in five. The specialist who handled it knew the car better than I did — that mattered.'}], n:'Marcus Reinholt', l:'Pacific Heights, CA · 2023 Lamborghini Huracán STO', a:'M'},
+  {parts:[{t:`I've bought a lot of cars over the years. The `},{t:'Earth MotorCars',em:true},{t:` floor is the only one in the South I'd put against the best in Miami or Los Angeles. The cars are right. The people are right.`}], n:'David Hammersmith', l:'Aspen, CO · 1971 Mercedes-Benz 280 SL', a:'D'},
+  {parts:[{t:'Trade was painless. They valued my old car fairly, structured the financing in under an hour, and the new one was being detailed before I’d finished signing. '},{t:'Genuinely impressive.',em:true}], n:'Rachel Okonkwo', l:'Atlanta, GA · 2024 Bentley Continental GT', a:'R'},
+  {parts:[{t:'The 70,000-square-foot showroom is something to see. I came expecting a dealership and walked into something more like a '},{t:'museum.',em:true},{t:' Three hours later I was buying a car.'}], n:'James Lockhart', l:'Houston, TX · 2022 McLaren 765LT Spider', a:'J'},
+  {parts:[{t:'Out-of-state purchase done entirely over text and email. Enclosed transport. The car arrived '},{t:'cleaner',em:true},{t:' than the photos. That never happens.'}], n:'Sasha Greco', l:'Brooklyn, NY · 2023 Porsche 911 GT3 Touring', a:'S'},
+  {parts:[{t:'They sourced a specific 1967 GT500 spec for me — Marti report and all — over four months. '},{t:'Patient, professional,',em:true},{t:' and the car was exactly what they said it was.'}], n:'Thomas Beaufort', l:'Charleston, SC · 1967 Shelby GT500', a:'T'},
+];
+
+const qText = document.getElementById('qText');
+const qName = document.getElementById('qName');
+const qLoc = document.getElementById('qLoc');
+const qAvatar = document.getElementById('qAvatar');
+const qNow = document.getElementById('qNow');
+const qTotal = document.getElementById('qTotal');
+const qFill = document.getElementById('qFill');
+const stage = document.getElementById('quoteStage');
+qTotal.textContent = String(testimonials.length).padStart(2,'0');
+
+let qi = 0;
+function showQ(i){
+  qi = (i + testimonials.length) % testimonials.length;
+  const t = testimonials[qi];
+  stage.style.opacity = 0; stage.style.transform = 'translateY(8px)';
+  setTimeout(()=>{
+    while(qText.firstChild) qText.removeChild(qText.firstChild);
+    t.parts.forEach(p=>{
+      const node = p.em ? document.createElement('em') : document.createTextNode(p.t);
+      if(p.em){ node.textContent = p.t; qText.appendChild(node); }
+      else { qText.appendChild(node); }
+    });
+    qName.textContent = t.n;
+    qLoc.textContent = t.l;
+    qAvatar.textContent = t.a;
+    qNow.textContent = String(qi+1).padStart(2,'0');
+    qFill.style.width = ((qi+1)/testimonials.length*100)+'%';
+    stage.style.opacity = 1; stage.style.transform = 'translateY(0)';
+  }, 220);
+}
+document.getElementById('qNext').addEventListener('click', ()=>showQ(qi+1));
+document.getElementById('qPrev').addEventListener('click', ()=>showQ(qi-1));
+showQ(0);
+let qAuto = setInterval(()=>showQ(qi+1), 7000);
+stage.addEventListener('mouseenter', ()=>clearInterval(qAuto));
+
+/* FORM */
+document.getElementById('contactForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const submitBtn = e.target.querySelector('button[type="submit"]');
+  const span = submitBtn.querySelector('span:first-child');
+  const original = span.textContent;
+  span.textContent = 'Inquiry Sent · Thank You';
+  submitBtn.style.background = 'var(--bone)';
+  setTimeout(()=>{ span.textContent = original; e.target.reset(); }, 4200);
+});
+
+/* HERO PARALLAX */
+const heroBg = document.querySelector('.hero-bg img');
+if(heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY;
+    if(y < window.innerHeight){
+      heroBg.style.transform = `scale(1.04) translateY(${y * 0.18}px)`;
+    }
+  }, {passive:true});
+}
+
+/* FIELD HAS-VAL */
+document.querySelectorAll('.field input, .field textarea').forEach(inp=>{
+  inp.addEventListener('blur', ()=>{
+    inp.parentElement.classList.toggle('has-val', !!inp.value);
+  });
+});
+</script>
+
+</body>
+</html>
